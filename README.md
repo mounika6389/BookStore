@@ -34,3 +34,5 @@ and also can be run from Maven Lifecycle options (clean, test, site)
   <li>Then as a last step the created user is deleted</li>
   </ul>
 9. Any additional scenarios can also be added in future without disturbing the existing code (reusability concept).
+
+![Allure Report](Allure-Report.png?raw=true "Allure report with all scenarios")
