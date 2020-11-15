@@ -1,24 +1,36 @@
-I have created a BDD framework with Cucumber, restAssured,Java,Testng and Allure reporting.
+##Bookstore API Testing
 
-1. I have used all the http methods GET, PUT,POST,DELETE.
-2. I have defined all my scenarios in Feature file.
-3. I have defined all my Step Definitions in Steps directory with all the methods in it.
-4. CucumberJvm is used as runner class
-5. The project can be run from Maven using maven commands like mvn clean, mvn test and mvn site for generating reports.
-6. I have integrated Allure reporting with cucumber where a detailed report will be generated.
-7. This feature contains the scenarios in following order:
+Implemented a BDD automation testing framework using following:
+ - **Programming language** : Java
+ - **Build tool** : Maven
+ - **BDD** : Cucumber
+ - **Library for REST** : REST-assured 
+ - **Testing framework** : Testng
+ - **Reporting** : Allure
+
+1. Implemented all the http methods GET, POST, PUT, DELETE.
+2. All the dependencies and plugins are defined in **pom.xml**
+3. Defined all my scenarios in Feature file (__test.feature__).
+4. Defined all my Step Definitions in _**Steps**_ directory with all the methods in it.
+5. **CucumberJvm** is used as runner class
+6. The project can be run from Maven using maven commands in the following order for testing and generating reports.:
+ ```
+ mvn clean 
+ mvn test 
+ mvn site
+ ```
+and also can be run from Maven Lifecycle options (clean, test, site)
+
+7.Integrated Allure reporting in the framework, a detailed report will be generated here at this location
+   **target/site/allure-maven-plugin.html** 
+
+8.This feature processes the execution in the following order:
   <ul>
   <li> As a first step a user is created </li>
   <li>Then a new book is added using POST method to the collection</li>
   <li>Replace the existing book with a new book using PUT method</li>
-  <li>Getting all the books in collection using GET</li>
+  <li>Get the details of book in collection using GET</li>
   <li>Deleting  a book from the collection using DELETE</li>
   <li>Then as a last step the created user is deleted</li>
   </ul>
-8. Any additional scenarios can also be added in future without disturbing the existing code. 
-
-
-TO DO 
-
-- Parameterise step definitions
-- Assertion as new step
+9. Any additional scenarios can also be added in future without disturbing the existing code (reusability concept).
