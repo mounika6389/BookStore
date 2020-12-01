@@ -1,4 +1,4 @@
-##Bookstore API Testing
+## Bookstore API Testing using Rest-Assured, Java & TestNG
 
 Implemented a BDD automation testing framework using following:
  - **Programming language** : Java
